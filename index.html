@@ -12,6 +12,7 @@
             padding: 0;
             background-color: #000;
             color: #fff;
+            position: relative;
         }
 
         /* Background squiggly pattern */
@@ -34,7 +35,7 @@
             font-size: 3rem;
         }
 
-        /* Pagination links */
+        /* Pagination */
         .pagination {
             text-align: center;
             margin-bottom: 20px;
@@ -53,7 +54,7 @@
             background-color: #444;
         }
 
-        /* Container for all categories */
+        /* Button container */
         .game-container {
             display: flex;
             flex-wrap: wrap;
@@ -61,95 +62,113 @@
             padding: 10px;
         }
 
-        /* Individual game category styling */
-        .category {
-            width: 100%;
-            max-width: 500px;
+        /* Game button styling */
+        .game-button {
+            width: 150px;
+            height: 150px;
             margin: 20px;
-            padding: 20px;
-            border: 2px solid #444;
-            background-color: #111;
-            border-radius: 10px;
-        }
-
-        .category h2 {
-            text-align: center;
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        /* Styling for the iframe where game will be embedded */
-        iframe {
-            width: 100%;
-            height: 300px;
             border: none;
-            border-radius: 8px;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        /* Button hover effect */
+        .game-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Buttons for each game (replace with actual logo URLs) */
+        .game1 { background-image: url('path/to/slope_logo.png'); }
+        .game2 { background-image: url('path/to/1v1LOL_logo.png'); }
+        .game3 { background-image: url('path/to/krunker_logo.png'); }
+        .game4 { background-image: url('path/to/shell_shockers_logo.png'); }
+        .game5 { background-image: url('path/to/zombs_royale_logo.png'); }
+        .game6 { background-image: url('path/to/run_3_logo.png'); }
+        .game7 { background-image: url('path/to/paper_io_logo.png'); }
+        .game8 { background-image: url('path/to/bonk_io_logo.png'); }
+        .game9 { background-image: url('path/to/vex_4_logo.png'); }
+        .game10 { background-image: url('path/to/basketball_stars_logo.png'); }
+        .game11 { background-image: url('path/to/agar_io_logo.png'); }
+        .game12 { background-image: url('path/to/surviv_io_logo.png'); }
+        .game13 { background-image: url('path/to/fireboy_watergirl_logo.png'); }
+        .game14 { background-image: url('path/to/drift_hunters_logo.png'); }
+        .game15 { background-image: url('path/to/minecraft_classic_logo.png'); }
+        .game16 { background-image: url('path/to/happy_wheels_logo.png'); }
+        .game17 { background-image: url('path/to/subway_surfers_logo.png'); }
+        .game18 { background-image: url('path/to/moto_x3m_logo.png'); }
+        .game19 { background-image: url('path/to/tank_trouble_logo.png'); }
+        .game20 { background-image: url('path/to/slither_io_logo.png'); }
+        .game21 { background-image: url('path/to/bad_ice_cream_logo.png'); }
+        .game22 { background-image: url('path/to/retro_bowl_logo.png'); }
+        .game23 { background-image: url('path/to/super_smash_flash_logo.png'); }
+        .game24 { background-image: url('path/to/getaway_shootout_logo.png'); }
+        .game25 { background-image: url('path/to/cookie_clicker_logo.png'); }
+        .game26 { background-image: url('path/to/tetris_logo.png'); }
+        .game27 { background-image: url('path/to/blocked_up_logo.png'); }
+        .game28 { background-image: url('path/to/super_mario_63_logo.png'); }
+        .game29 { background-image: url('path/to/crossy_road_logo.png'); }
+        .game30 { background-image: url('path/to/among_us_logo.png'); }
+        .game31 { background-image: url('path/to/stickman_hook_logo.png'); }
+        .game32 { background-image: url('path/to/justfall_lol_logo.png'); }
+        .game33 { background-image: url('path/to/flappy_bird_logo.png'); }
+        .game34 { background-image: url('path/to/helicopter_game_logo.png'); }
+        .game35 { background-image: url('path/to/dino_run_logo.png'); }
+        .game36 { background-image: url('path/to/madalin_stunt_cars_logo.png'); }
+        .game37 { background-image: url('path/to/bloxorz_logo.png'); }
+        .game38 { background-image: url('path/to/2048_logo.png'); }
+        .game39 { background-image: url('path/to/doodle_jump_logo.png'); }
+        .game40 { background-image: url('path/to/fireboy_watergirl_logo.png'); }
+        .game41 { background-image: url('path/to/moto_x3m_logo.png'); }
+        .game42 { background-image: url('path/to/tetris_logo.png'); }
+        .game43 { background-image: url('path/to/minecraft_classic_logo.png'); }
+        .game44 { background-image: url('path/to/super_mario_63_logo.png'); }
+        .game45 { background-image: url('path/to/krunker_logo.png'); }
+        .game46 { background-image: url('path/to/slither_io_logo.png'); }
+        .game47 { background-image: url('path/to/tank_trouble_logo.png'); }
+        .game48 { background-image: url('path/to/getaway_shootout_logo.png'); }
+        .game49 { background-image: url('path/to/happy_wheels_logo.png'); }
+        .game50 { background-image: url('path/to/paper_io_logo.png'); }
+
+        /* Hide all pages initially */
+        .game-page {
+            display: none;
+        }
+
+        /* Show the first page by default */
+        #page1 {
+            display: block;
         }
     </style>
 </head>
 <body>
     <h1>Popular Unblocked Games</h1>
 
-    <!-- Pagination -->
-    <div class="pagination">
-        <a href="page1.html">Page 1</a>
-        <a href="page2.html">Page 2</a>
-        <a href="page3.html">Page 3</a>
-        <a href="page4.html">Page 4</a>
-        <a href="page5.html">Page 5</a>
+    <!-- Page 1 (Games 1-10) -->
+    <div class="game-container game-page" id="page1">
+        <a href="game1.html"><button class="game-button game1"></button></a>
+        <a href="game2.html"><button class="game-button game2"></button></a>
+        <a href="game3.html"><button class="game-button game3"></button></a>
+        <a href="game4.html"><button class="game-button game4"></button></a>
+        <a href="game5.html"><button class="game-button game5"></button></a>
+        <a href="game6.html"><button class="game-button game6"></button></a>
+        <a href="game7.html"><button class="game-button game7"></button></a>
+        <a href="game8.html"><button class="game-button game8"></button></a>
+        <a href="game9.html"><button class="game-button game9"></button></a>
+        <a href="game10.html"><button class="game-button game10"></button></a>
     </div>
 
-    <!-- Page 1 (Games 1 - 10) -->
-    <div class="game-container">
-        <div class="category">
-            <h2>1. 1v1.LOL</h2>
-            <iframe src="https://example.com/game1"></iframe>
-        </div>
-
-        <div class="category">
-            <h2>2. Agar.io</h2>
-            <iframe src="https://example.com/game2"></iframe>
-        </div>
-
-        <div class="category">
-            <h2>3. Among Us (web version)</h2>
-            <iframe src="https://example.com/game3"></iframe>
-        </div>
-
-        <div class="category">
-            <h2>4. Bad Ice Cream</h2>
-            <iframe src="https://example.com/game4"></iframe>
-        </div>
-
-        <div class="category">
-            <h2>5. Basketball Legends</h2>
-            <iframe src="https://example.com/game5"></iframe>
-        </div>
-
-        <div class="category">
-            <h2>6. Basketball Stars</h2>
-            <iframe src="https://example.com/game6"></iframe>
-        </div>
-
-        <div class="category">
-            <h2>7. Blocked Up</h2>
-            <iframe src="https://example.com/game7"></iframe>
-        </div>
-
-        <div class="category">
-            <h2>8. Bloxorz</h2>
-            <iframe src="https://example.com/game8"></iframe>
-        </div>
-
-        <div class="category">
-            <h2>9. Bonk.io</h2>
-            <iframe src="https://example.com/game9"></iframe>
-        </div>
-
-        <div class="category">
-            <h2>10. Cookie Clicker</h2>
-            <iframe src="https://example.com/game10"></iframe>
-        </div>
-    </div>
-</body>
-</html>
+    <!-- Page 2 (Games 11-20) -->
+    <div class="game-container game-page" id="page2">
+        <a href="game11.html"><button class="game-button game11"></button></a>
+        <a href="game12.html"><button class="game-button game12"></button></a>
+        <a href="game13.html"><button class="game-button game13"></button></a>
+        <a href="game14.html"><button class="game-button game14"></button></a>
+        <a href="game15.html"><button class="game-button game15"></button></a>
+        <a href="game16.html"><button class="game-button game16"></button></a>
+        <a href="game17.html"><button class="game-button game17"></button></a>
+        <a href="game18.html"><button class="game-button game18"></button></a>
+        <a href="game19.html"><button class="game-button game19"></button></a>
+        <a href="game20.html"><button class
