@@ -3,33 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Embed Website</title>
+    <title>Unblocked Games</title>
     <style>
+        /* General styling */
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #000;
+            color: #fff;
         }
-        .game-container {
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
+
+        /* Background squiggly pattern */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/squiggles.png');
+            opacity: 0.1; /* Subtle, dark squiggly effect */
+            z-index: -1;
+        }
+
+        /* Page title styling */
+        h1 {
+            text-align: center;
             padding: 20px;
+            font-size: 3rem;
         }
+
+        /* Container for all categories */
+        .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        /* Individual game category styling */
+        .category {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #444;
+            background-color: #111;
+            border-radius: 10px;
+        }
+
+        .category h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Styling for the iframe where game will be embedded */
         iframe {
             width: 100%;
-            height: 500px;
+            height: 300px;
             border: none;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <h1>smd lil dude heres some games 4 u!</h1>
+    <h1>Popular Unblocked Games</h1>
+    
     <div class="game-container">
-        <!-- Embed code for the game goes here -->
-        <iframe src="https://example.com/game"></iframe>
+        <!-- Template for each game category -->
+        <div class="category">
+            <h2>1. Slope</h2>
+            <!-- Embed code for Slope -->
+            <iframe src="https://example.com/game1"></iframe>
+        </div>
+        
+        <div class="category">
+            <h2>2. 1v1.LOL</h2>
+            <!-- Embed code for 1v1.LOL -->
+            <iframe src="https://example.com/game2"></iframe>
+        </div>
+
+        <div class="category">
+            <h2>3. Krunker.io</h2>
+            <!-- Embed code for Krunker.io -->
+            <iframe src="https://example.com/game3"></iframe>
+        </div>
+        
+        <!-- Additional 47 categories below -->
+        
+        <div class="category">
+            <h2>4. Shell Shockers</h2>
+            <iframe src="https://example.com/game4"></iframe>
+        </div>
+
+        <div class="category">
+            <h2>5. Zombs Royale</h2>
+            <iframe src="https://example.com/game5"></iframe>
+        </div>
+
+        <div class="category">
+            <h2>6. Run 3</h2>
+            <iframe src="https://example.com/game6"></iframe>
+        </div>
+
+        <!-- Copy-paste and update for remaining 44 categories -->
+        <!-- For demonstration, here are a few more popular games -->
+        <div class="category">
+            <h2>7. Paper.io</h2>
+            <iframe src="https://example.com/game7"></iframe>
+        </div>
+
+        <div class="category">
+            <h2>8. Bonk.io</h2>
+            <iframe src="https://example.com/game8"></iframe>
+        </div>
+
+        <div class="category">
+            <h2>9. Vex 4</h2>
+            <iframe src="https://example.com/game9"></iframe>
+        </div>
+
+        <div class="category">
+            <h2>10. Basketball Stars</h2>
+            <iframe src="https://example.com/game10"></iframe>
+        </div>
+
+        <!-- Continue adding categories and updating the game names and embed URLs -->
     </div>
 </body>
 </html>
